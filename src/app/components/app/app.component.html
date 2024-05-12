@@ -1,0 +1,15 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+  <h1>Platform</h1>
+  &nbsp;
+  <span routerLink="/" class="app-name" style="color: #fd6b04;">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+   Dashboard </span
+  >
+</mat-toolbar>
+<mat-progress-bar
+  *ngIf="loading$ | async"
+  color="accent"
+  mode="indeterminate"
+></mat-progress-bar>
+
+<router-outlet></router-outlet>
